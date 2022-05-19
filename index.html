@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Validador CPF</title>
-</head>
-<body>
-  
-  <script src="./script.js"></script>
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Validador CPF</title>
+  </head>
+  <body>
+
+      <h1>Validador de CPF</h1>
+
+    <div class="page-header">
+      <div id="success" style="display: none" role="alert" class="message-display">
+        <p><strong>Sucesso!!</strong> Seu CPF é válido.</p>
+      </div>
+      <div id="error" style="display: none" role="alert" class="message-display">
+        <strong>Falha!!</strong> Seu CPF não é válido.
+      </div>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Digite o cpf para validação" id="cpf"/>
+      <small>Digite somente números</small>
+      <button type="button" onclick="validar()">Validar</button>
+    </form>
+
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2022 Guilherme Dev</p>
+        <p>Desenvolvido por: Guilherme de Araujo Gabriel</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
